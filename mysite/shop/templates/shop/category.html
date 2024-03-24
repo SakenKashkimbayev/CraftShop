@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CraftShop</title>
+</head>
+<body>
+    <h1>Категория: {{category}}</h1>
+    <ul>
+        {% for p in product %}
+        <li>
+            <a href="{{p.id}}">{{ p.name }}</a>
+        </li>
+        {% endfor%}
+    </ul>
+</body>
+</html>

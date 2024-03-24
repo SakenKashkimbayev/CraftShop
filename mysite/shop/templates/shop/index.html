@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>c</title>
+</head>
+<body>
+    <h1>Добро пожаловать в наш магазин</h1>
+    <p>В нашем магазине есть следующие категорий товаров:</p>
+    <ul>
+        {% for c1 in category %}
+        <li>
+            <a href="{{c1.id}}">{{ c1.id}} {{ c1.name }}</a>
+        </li>
+        {% endfor%}
+    </ul>
+</body>
+</html>
